@@ -2,6 +2,246 @@
 
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../public/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.eot');
+    src: local('Laqonic 4F Unicase Bold Italic'), local('Laqonic4FUnicase-BoldItalic'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-MediumItalic.eot');
+    src: local('Laqonic 4F Unicase Medium Italic'), local('Laqonic4FUnicase-MediumItalic'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-MediumItalic.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-MediumItalic.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-Bold.eot');
+    src: local('Laqonic 4F Unicase Bold'), local('Laqonic4FUnicase-Bold'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Bold.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Bold.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBold.eot');
+    src: local('Laqonic 4F Unicase SemiBold'), local('Laqonic4FUnicase-SemiBold'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBold.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBold.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-Medium.eot');
+    src: local('Laqonic 4F Unicase Medium'), local('Laqonic4FUnicase-Medium'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Medium.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Medium.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-Light.eot');
+    src: local('Laqonic 4F Unicase Light'), local('Laqonic4FUnicase-Light'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Light.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Light.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Light.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-Italic.eot');
+    src: local('Laqonic 4F Unicase Italic'), local('Laqonic4FUnicase-Italic'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Italic.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Italic.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase.eot');
+    src: local('Laqonic 4F Unicase'), local('Laqonic4FUnicase'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-Black.eot');
+    src: local('Laqonic 4F Unicase Black'), local('Laqonic4FUnicase-Black'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Black.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Black.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Black.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-LightItalic.eot');
+    src: local('Laqonic 4F Unicase Light Italic'), local('Laqonic4FUnicase-LightItalic'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-LightItalic.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-LightItalic.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-BlackItalic.eot');
+    src: local('Laqonic 4F Unicase Black Italic'), local('Laqonic4FUnicase-BlackItalic'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BlackItalic.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BlackItalic.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Laqonic 4F Unicase';
+    src: url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBoldItalic.eot');
+    src: local('Laqonic 4F Unicase SemiBold Italic'), local('Laqonic4FUnicase-SemiBoldItalic'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBoldItalic.woff2') format('woff2'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBoldItalic.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../public/fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../public/fonts/glacial-indifference/GlacialIndifference-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('../public/fonts/glacial-indifference/GlacialIndifference-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-GrandHeavy.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-GrandLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-Narrow.otf') format('opentype');
+    font-weight: 400;
+    font-stretch: condensed;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-TextBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-ThinItalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-Tight.otf') format('opentype');
+    font-weight: 400;
+    font-stretch: ultra-condensed;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-WideBlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-stretch: expanded;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url('../public/fonts/Agrandir/Agrandir-WideLight.otf') format('opentype');
+    font-weight: 300;
+    font-stretch: expanded;
+    font-style: normal;
+}
+
 @theme {
     --color-off-white: #f8f8f8;
     --color-tier-orange: #f05a28;
@@ -14,8 +254,33 @@
     --color-dark-100: #0f0d23;
     --breakpoint-xs: 480px;
     --font-sans: InterVariable, sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-laqonic: 'Laqonic 4F Unicase', sans-serif;
+    --font-glacial: 'Glacial Indifference', sans-serif;
+    --font-agrandir: 'Agrandir', sans-serif;
 }
+
 
 body {
     background-color: var(--color-off-white);
+}
+
+.sombra-neon {
+    box-shadow: 22px 10px 30px -4px rgba(0,0,0,0.4),-22px 10px 15px -3px rgba(0,0,0,0.4);
+}
+
+.sombra-faixa {
+    box-shadow: 0px 21px 16px -5px rgba(0,0,0,0.3),0px -21px 16px -5px rgba(0,0,0,0.3);
+}
+
+.embla {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+    gap: 5rem;
+}
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
 }

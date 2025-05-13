@@ -1,6 +1,6 @@
 import React from 'react';
 // bg-[linear-gradient(to_bottom,var(--color-off-white)_32%,var(--color-tier-yellow)_32%)]
-const Hero = () => {
+const HeroLg = () => {
     return (
         <div
             className="lg:flex hidden items-center justify-end w-full
@@ -35,4 +35,4 @@ const HeroText = () => {
         </div>
     )
 }
-export default Hero;
+export default HeroLg;
