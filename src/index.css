@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@theme {
+    --color-off-white: #f8f8f8;
+    --color-tier-orange: #f05a28;
+    --color-tier-blue: #462984;
+    --color-tier-yellow: #f9a51a;
+    --color-primary: #030014;
+    --color-light-100: #cecefb;
+    --color-light-200: #a8b5db;
+    --color-gray-100: #9ca4ab;
+    --color-dark-100: #0f0d23;
+    --breakpoint-xs: 480px;
+    --font-sans: InterVariable, sans-serif;
+}
+
+body {
+    background-color: var(--color-off-white);
+}
