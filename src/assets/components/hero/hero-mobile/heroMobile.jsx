@@ -12,7 +12,6 @@ const HeroMobile = () => {
                     src="./hero_mobile_image.png"
                     alt="Hero"
                     className="w-full"
-                    // ou use a classe customizada do tailwind se preferir
                 />
             </div>
             {/* Faixa branca */}
