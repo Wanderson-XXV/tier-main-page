@@ -278,9 +278,13 @@ body {
 }
 .embla__container {
     display: flex;
-    gap: 5rem;
+    padding-left: 3rem;
 }
 .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
+   
+}
+.slide {
+    margin-right: 4rem;
 }

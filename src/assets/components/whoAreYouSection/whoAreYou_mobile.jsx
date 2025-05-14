@@ -8,7 +8,7 @@ const WhoAreYouMobile = () => {
     return (
         <div className={""}>
             <div className="lg:hidden block embla" ref={emblaRef}>
-                <div className="embla__container h-screen py-8  ">
+                <div className="embla__container h-[60vh] md:h-screen py-8  ">
                         <Card
                             bgColor="bg-off-white"
                             bgHover={"hover:bg-tier-blue"}
