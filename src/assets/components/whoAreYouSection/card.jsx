@@ -28,7 +28,7 @@ const Card = ({ slide = "slide" , bgColor, activeColor, selected = false, title,
         const hasTouch = window.matchMedia('(hover: none)').matches;
 
         // Se for desktop, não aplica a classe active
-        if (isDesktop || !hasTouch) return "text-dark-100";
+        if (isDesktop) return "text-dark-100";
 
         if (!selected) return "text-dark-100";
         

@@ -14,10 +14,10 @@ function App() {
 
   return (
     <main>
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero  />
-        <WhoAreYou_mobile/>
-        <WhoAreYouLg />
+        {/* <WhoAreYou_mobile/> */}
+        {/* <WhoAreYouLg /> */}
         <ProgramSectionLg />
         <Competition/>
         <Footer />

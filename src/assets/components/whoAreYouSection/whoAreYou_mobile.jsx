@@ -12,14 +12,35 @@ const WhoAreYouMobile = () => {
     })
     const [selectedIndex, setSelectedIndex] = useState(0)
     useEffect(() => {
-        if(emblaApi){
-            console.log(emblaApi.slideNodes())
+        if (!emblaApi) return;
+        
+        try {
+            const nodes = emblaApi.slideNodes();
+            if (nodes) {
+                console.log(nodes);
+            }
+        } catch (error) {
+            console.error('Error accessing slide nodes:', error);
         }
     }, [emblaApi])
 
     useEffect(() => {
-        if(!emblaApi) return;
-        emblaApi.on('select', () => setSelectedIndex(emblaApi.selectedScrollSnap()));
+        if (!emblaApi) return;
+        
+        const onSelect = () => {
+            try {
+                setSelectedIndex(emblaApi.selectedScrollSnap());
+            } catch (error) {
+                console.error('Error updating selected index:', error);
+            }
+        };
+
+        emblaApi.on('select', onSelect);
+        
+        // Cleanup function to remove the event listener
+        return () => {
+            emblaApi.off('select', onSelect);
+        };
     }, [emblaApi])
 
     

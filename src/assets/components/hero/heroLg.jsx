@@ -20,13 +20,11 @@ const HeroLg = () => {
 const HeroText = () => {
     return (
         <div className=" p-6 md:p-12 text-white">
-            <image>
-                <img
-                    src="./title.svg"
-                    alt="img TIER"
-                    className="block h-44 w-auto"
-                />
-            </image>
+            <img
+                src="./title.svg"
+                alt="img TIER"
+                className="block h-44 w-auto"
+            />
             <p className="text-sm md:text-xl leading-relaxed pl-3">
                 Conectamos alunos, professores e escolas a um novo jeito de aprender: com mão na massa,
                 criatividade e projetos reais. Acreditamos que todo estudante pode ser protagonista

@@ -8,11 +8,14 @@ const navigation = [
     { name: 'Produtos', href: '#', current: false },
     { name: 'Sobre nós', href: '#', current: false },
 ]
-const selected = classNames( 'text-tier-orange font-bold hover:bg-tier-blue hover:text-white')
-const unselected = classNames('text-black hover:bg-tier-blue hover:text-white')
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
+
+const selected = classNames( 'text-tier-orange font-bold hover:bg-tier-blue hover:text-white')
+const unselected = classNames('text-black hover:bg-tier-blue hover:text-white')
+
 
 export default function Navbar() {
     return (
@@ -24,18 +27,14 @@ export default function Navbar() {
                         <DisclosureButton className="group relative inline-flex items-center cursor-pointer justify-center rounded-md p-2 text-gray-400 hover:bg-tier-blue hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
                             <span className="absolute -inset-0.5" />
                             <span className="sr-only">Open main menu</span>
-                            <button
-                                type="button"
-                                className="inline-flex items-center justify-center p-2 text-gray-500 md:hidden group-data-open:hidden"
-                            >
+                            <div className="inline-flex items-center justify-center p-2 text-gray-500 md:hidden group-data-open:hidden">
                                 <img
                                     src="/three_bar.svg"
                                     alt="Abrir menu"
                                     className="h-6 w-6"
                                 />
-                            </button>
-                           
-                            <XMarkIcon aria-hidden="true" className="hidden size-11  group-data-open:block" />
+                            </div>
+                            <XMarkIcon aria-hidden="true" className="hidden size-11 group-data-open:block" />
                         </DisclosureButton>
                     </div>
                     <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-between h-12">
