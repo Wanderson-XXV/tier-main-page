@@ -2,8 +2,8 @@ import React from 'react'
 
 const ItemCard = ({ icon_src, text = "EXEMPLO2WE" }) => {
     return (
-        <div>
-            <div className=" sombra-neon sm:h-40 h-30 aspect-square rounded-xl bg-off-white flex items-center justify-center shadow">
+        <div onClick={() => {}} >
+            <div  className="clickable sombra-neon sm:h-40 h-30 aspect-square rounded-xl bg-off-white flex items-center justify-center shadow">
                 {/* Container da imagem, com fundo e espaçamento */}
                 <div className="w-4/5 h-4/5 bg-off-white rounded-lg flex items-center justify-center overflow-hidden">
                     <img

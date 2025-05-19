@@ -4,7 +4,7 @@ const HeroMobile = () => {
     return (
         <div
             className="flex lg:hidden items-center flex-col  w-full
-             h-screen bg-[#f9a51b]"
+             pb-16 bg-[#f9a51b]"
         >
             {/* Imagem */}
             <div className="w-full flex justify-center relative">

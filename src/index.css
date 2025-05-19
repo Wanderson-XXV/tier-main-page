@@ -263,6 +263,17 @@
 
 body {
     background-color: var(--color-off-white);
+    overflow-x: hidden;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.clickable:hover, .clickable:focus, .clickable:active {
+    box-shadow: none;
+    transform: scale(1.065);
 }
 
 .sombra-neon {
@@ -278,13 +289,37 @@ body {
 }
 .embla__container {
     display: flex;
-    padding-left: 3rem;
+    padding-left: 0;
 }
 .embla__slide {
+
     flex: 0 0 100%;
     min-width: 0;
    
 }
-.slide {
-    margin-right: 4rem;
+.slide, .slide2 {
+    margin-right: 1rem;
+
+}
+
+/* Classes específicas para cada card quando ativo */
+.slide-active-blue {
+    transform: scale(1.065);
+    opacity: 1;
+    background-color: var(--color-tier-blue) !important;
+    color: white !important;
+}
+
+.slide-active-yellow {
+    transform: scale(1.065);
+    opacity: 1;
+    background-color: var(--color-tier-yellow) !important;
+    color: white !important;
+}
+
+.slide-active-orange {
+    transform: scale(1.065);
+    opacity: 1;
+    background-color: var(--color-tier-orange) !important;
+    color: white !important;
 }
