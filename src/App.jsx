@@ -16,8 +16,6 @@ function App() {
     <main>
         <Navbar />
         <Hero  />
-        <WhoAreYou_mobile/>
-        <WhoAreYouLg />
         <ProgramSectionLg />
         <Competition/>
         <Footer />

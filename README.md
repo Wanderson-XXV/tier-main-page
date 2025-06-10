@@ -11,11 +11,8 @@ O site foi pensado para ser responsivo, visualmente marcante e fácil de navegar
 
 ## Tecnologias Utilizadas
 
-- **React** + **TypeScript**: Estrutura moderna, tipagem forte e componentização de respeito.
+- **React** + **TypeScript**: Estrutura moderna com componentização e tipagem forte.
 - **Tailwind CSS**: Estilização rápida, responsiva e sem dor de cabeça.
-- **Appwrite**: Backend as a Service para autenticação, banco de dados e storage (quando necessário).
-- **Streamlit**: Para prototipagem rápida de dashboards e ferramentas analíticas (em projetos paralelos).
-- **Expo Router**: Organização de rotas em projetos mobile/web (quando aplicável).
 
 ## Como Rodar o Projeto
 
