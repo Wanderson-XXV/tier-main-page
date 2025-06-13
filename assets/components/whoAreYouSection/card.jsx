@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 const Card = ({ slide = "slide" , bgColor, activeColor, selected = false, title, text, img, textColor = "text-black", border = "", bgHover }) => {
@@ -5,7 +6,7 @@ const Card = ({ slide = "slide" , bgColor, activeColor, selected = false, title,
     const getActiveClass = () => {
 
         const isDesktop = window.matchMedia('(min-width: 600px)').matches;
-        const hasTouch = window.matchMedia('(hover: none)').matches;
+        //const hasTouch = window.matchMedia('(hover: none)').matches;
 
         // Se for desktop, não aplica a classe active
         if (isDesktop) return "";
@@ -25,7 +26,7 @@ const Card = ({ slide = "slide" , bgColor, activeColor, selected = false, title,
 
     const getTextColor = () => {
         const isDesktop = window.matchMedia('(min-width: 600px)').matches;
-        const hasTouch = window.matchMedia('(hover: none)').matches;
+        //const hasTouch = window.matchMedia('(hover: none)').matches;
 
         // Se for desktop, não aplica a classe active
         if (isDesktop) return "text-dark-100";

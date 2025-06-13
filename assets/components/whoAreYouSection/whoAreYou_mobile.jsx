@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Card from "./card.jsx";
