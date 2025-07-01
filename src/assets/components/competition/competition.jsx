@@ -1,29 +1,37 @@
 import React from 'react'
 
 const Competition = () => {
-  return (
-    <>
-
-    {/*  DESKTOP */}
-      <div 
-        className="hidden md:flex w-full h-screen justify-center items-center bg-off-white p-4"
-      > 
-        <img
-            src="./tier-competition-section.png" alt="Competition Image" className="object-contain rounded-2xl h-[95%]"
-        />
-      </div>
-    {/*  MOBILE */}
-      <div 
-        className="md:hidden w-full h-screen flex justify-center items-center bg-off-white p-4"
-      > 
-        <img
-            src="./tier-competition-section-mobile.png" alt="Competition Image" className="object-contain h-[95%] rounded-2xl"
-        />
-      </div>
-    </>
-   
+    return (
+        <div className={"min-h-screen px-12 py-24 lg:flex-row flex-col bg-off-white gap-8 w-screen flex items-center justify-center"}>
+            <div className={"bg-[url('/ilustracao_competition.svg')] bg-no-repeat bg-cover bg-center lg:basis-[50%] lg:flex-shrink-0 w-full aspect-[11/16] max-h-svh rounded-lg lg:block hidden"}>
+            </div>
   
-  )
+            <div className={"rounded-lg lg:min-h-[57rem] lg:justify-start w-full flex flex-col items-center justify-center overflow-hidden "}>
+  
+                <div className={"h-40 sm:h-64 aspect-[1757/1020] bg-[url('/tier_competition_only_logo.svg')] bg-no-repeat bg-cover bg-center "}></div>
+                <p className={"font-glacial text-dark-gray-text lg:px-16 lg:my-16 my-4 md:text-xl sm:text-lg text-base w-full text-leftt "}>
+                    A TIER Competition é um programa da TIER
+                    Education que oferece mentoria e suporte para
+                    escolas e equipes que desejam participar de
+                    competições de robótica. Nosso objetivo é capacitar
+                    escolas e equipes, tanto iniciantes quanto
+                    experientes, a alcançarem seu potencial máximo nas
+                    competições, desenvolvendo habilidades essenciais e
+                    promovendo a paixão pela robótica e pela tecnologia.
+                </p>
+                <button
+                    className='bg-tier-yellow w-[60%] lg:my-0 my-8 text-off-white h-18  text-2xl sm:text-4xl font-bold rounded-4xl font-glacial'
+                >
+                    SAIBA MAIS
+                </button>
+            </div>
+  
+            <div className={"bg-[url('/ilustracao_competition.svg')] bg-no-repeat bg-cover bg-center lg:basis-[50%] lg:flex-shrink-0 w-full  aspect-[16/11] max-h-svh rounded-lg block lg:hidden"}>
+            </div>
+  
+        </div>
+    
+    )
 }
 
 export default Competition

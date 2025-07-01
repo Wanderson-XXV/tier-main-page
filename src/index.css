@@ -244,7 +244,7 @@
 
 @theme {
     --color-off-white: #f8f8f8;
-    --color-tier-orange: #f05a28;
+    --color-tier-orange: #ff4203;
     --color-tier-blue: #462984;
     --color-tier-yellow: #f9a51a;
     --color-primary: #030014;
@@ -260,6 +260,17 @@
     --font-agrandir: 'Agrandir', sans-serif;
 }
 
+  .group:hover .tier-blue-bg-hover {
+    background-color: rgba(70, 41, 132, 0.92); /* Cor com opacidade */
+  }
+  
+  .group:hover .tier-orange-bg-hover {
+    background-color: rgb(255, 66, 3, 0.9); /* Cor com opacidade */
+  }
+  
+  .group:hover .tier-yellow-bg-hover {
+    background-color: rgba(255, 159, 0, 0.9); /* Cor com opacidade */
+  }
 
 body {
     background-color: var(--color-off-white);
@@ -303,21 +314,21 @@ body {
 }
 
 /* Classes específicas para cada card quando ativo */
-.slide-active-blue {
+.not-slide-active-blue {
     transform: scale(1.065);
     opacity: 1;
     background-color: var(--color-tier-blue) !important;
     color: white !important;
 }
 
-.slide-active-yellow {
+.not-slide-active-yellow {
     transform: scale(1.065);
     opacity: 1;
     background-color: var(--color-tier-yellow) !important;
     color: white !important;
 }
 
-.slide-active-orange {
+.not-slide-active-orange {
     transform: scale(1.065);
     opacity: 1;
     background-color: var(--color-tier-orange) !important;

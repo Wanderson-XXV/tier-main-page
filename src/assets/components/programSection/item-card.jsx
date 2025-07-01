@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useRef, useEffect } from 'react';
 
 // Hook personalizado para detectar hover, focus e active
