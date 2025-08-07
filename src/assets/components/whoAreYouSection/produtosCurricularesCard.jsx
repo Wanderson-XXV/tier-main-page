@@ -15,7 +15,7 @@ const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide
             // Mobile
             if (width < 768) return 'mobile';
             // Notebook
-            if (width >= 768 && height <= 800) return 'notebook';
+            if (width >= 768 && height <= 1200) return 'notebook';
             // Desktop
             return 'desktop';
         }
@@ -33,8 +33,8 @@ const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide
                 }
             case 'notebook':
                 return {
-                    position: 'top-[23%]',
-                    height: 'h-[80%]',
+                    position: 'top-[20%]',
+                    height: 'h-[85%]',
                     padding: 'px-4'
                 };
             case 'desktop':
@@ -53,7 +53,7 @@ const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide
             case 'mobile':
                 return 'text-sm';
             case 'notebook':
-                return 'text-lg';
+                return 'text-sm';
             default: // desktop
                 return 'text-base md:text-2xl';
         }
@@ -74,9 +74,11 @@ const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide
 
 
     const textStyles = getTextContainerStyles();
+    // const screenType = getScreenType();
     return (
+         
         <div className={`relative h-[60vh] md:h-[95vh] px-2 flex-1 flex flex-col items-center justify-center ${slide}`}>
-            
+                {/* <h1>{screenType}</h1> */}
             <div
                 style={{
                     backgroundImage: `url(${img})`,
@@ -84,12 +86,12 @@ const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide
                     backgroundPosition: 'top',
                     backgroundRepeat: 'no-repeat'
                 }}
-                className={`group overflow-hidden relative rounded-3xl flex flex-col justify-start items-center shadow-lg transition-all duration-300 transform hover:scale-105 aspect-[9/12] h-[90%] md:aspect-[9/15] md:h-[80%] min-h-[400px]`}
+                className={`group overflow-hidden relative rounded-3xl flex flex-col justify-start items-center shadow-lg transition-all duration-300 transform hover:scale-115 aspect-[9/12] h-[90%] md:aspect-[9/15] md:h-[80%] min-h-[400px]`}
             >
                 {/* Overlay de fundo - começa agora de acordo com o tipo de tela */}
-                <div className={`absolute ${textStyles.position} ${textStyles.height} w-full transition-all duration-300 z-10`}>
+                <div className={`absolute ${textStyles.position} ${textStyles.height}  w-full transition-all duration-300 z-10`}>
                     {/* Overlay do texto - começa agora de acordo com o tipo de tela */}
-                    <div className={`absolute ${textStyles.padding} ${textStyles.position} ${textStyles.height} w-full transition-all duration-500 flex items-center justify-center text-left ${getColorClassName(color)} z-10`}>
+                    <div className={`absolute ${textStyles.padding} ${textStyles.position} ${textStyles.height} w-full group-hover:w-[calc(100%-1px)] rounded-4xl transition-all duration-500 flex  items-center justify-center text-left ${getColorClassName(color)} z-10`}>
                         <div className="max-h-full overflow-hidden">
                             <p className={`transition-all duration-500 group-hover:inline hidden text-white ${getTextSize()} py-0 mb-0 md:mb-4 opacity-100 leading-tight`}>
                                 <span className="font-bold">{title}</span>

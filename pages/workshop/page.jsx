@@ -13,13 +13,13 @@ const Workshop = () => {
 
 const Section2 = () => {
     return (
-        <div className='h-[80vh]  md:aspect-[16/9] w-screen p-4 bg-tier-yellow my-25 section-shadow'>
+        <div className=' flex flex-col items-center justify-center h-[95vh] px-12 py-24 w-screen bg-tier-yellow my-25 section-shadow'>
             {/* Add content for Section2 here */}
-            <h1 className='text-white text-center font-agrandir md:text-3xl pt-12'>
+            <h1 className='text-white text-center font-agrandir md:text-xl md:px-12'>
                 O <span className='font-bold'>TIER Workshop</span> é um programa gratuito que tem como objetivo
                 levar a educação tecnológica para todos os estudantes, de forma prática, acessível e envolvente.
             </h1>
-            <div className={"mt-12 bg-off-white lg:basis-[60%] lg:flex-shrink-0 w-full  aspect-video rounded-lg"}></div>
+            <div className={"mt-12 bg-off-white w-[90vw] md:max-w-[50vw]  aspect-video  rounded-lg"}></div>
         </div>
     );
 };

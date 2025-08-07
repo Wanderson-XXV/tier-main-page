@@ -31,7 +31,7 @@ const FooterLg = () => {
                         <a href="https://www.instagram.com/tier_education" target="_blank" rel="noopener noreferrer">
                             <img src="/linkedin-icon.svg" alt="Linkedin" className="w-5 h-5 md:w-8 md:h-8 mr-4" />
                         </a>
-                        <a href="https://www.instagram.com/tier_education" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/5521991716690" target="_blank" rel="noopener noreferrer">
                             <img src="/whatsapp-icon.svg" alt="whatsapp" className="w-5 h-5 md:w-8 md:h-8 mr-4" />
                         </a>                                                
                     </div>

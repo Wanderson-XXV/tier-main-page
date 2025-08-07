@@ -17,9 +17,9 @@ function App() {
     <main>
            <Navbar />
             <Hero  />
-            <ProdutosCurricularesSection/>
-            <AboutUsSection/>
-            <Competition/>
+            <div id="produtos"><ProdutosCurricularesSection /></div>
+            <div id="sobre-nos"><AboutUsSection /></div>
+            <div id="competition"><Competition/></div>
             <Footer />
     </main>
   )

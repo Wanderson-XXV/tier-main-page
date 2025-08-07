@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUsSection = () => {
     return (
-        <div className={"px-12 py-24 lg:flex-row flex-col bg-tier-blue gap-8 w-screen flex items-center justify-center"}>
+ <div className={"px-12 py-24 lg:flex-row flex-col bg-tier-blue gap-8 w-screen flex items-center justify-center"}>
             <div className={"rounded-lg lg:min-h-[34rem] lg:justify-start w-full md:flex md:flex-col items-center justify-center overflow-hidden "}>
                 <h1 className={"uppercase font-glacial mb-6 lg:mb-14 lg:text-7xl text-white font-bold text-4xl w-full text-center"}>SOBRE nós</h1>
                 <p className={"font-glacial text-white lg:px-8  md:text-xl sm:text-lg text-base w-full text-left"}>

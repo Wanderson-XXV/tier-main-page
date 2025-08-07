@@ -269,7 +269,7 @@
   }
   
   .group:hover .tier-yellow-bg-hover {
-    background-color: rgba(255, 159, 0, 0.9); /* Cor com opacidade */
+    background-color: rgba(255, 159, 0, 0.97); /* Cor com opacidade */
   }
 
 body {
