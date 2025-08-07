@@ -1,16 +1,25 @@
 "use client"
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 // bg-[linear-gradient(to_bottom,var(--color-off-white)_32%,var(--color-tier-yellow)_32%)]
 const HeroLg = () => {
 
-    const [emblaRef, emblaApi] = useEmblaCarousel({
+ const [emblaRef, emblaApi] = useEmblaCarousel({
         loop: true,
         align: 'center',
         slidesToScroll: 1,
         containScroll: 'trimSnaps',
         dragFree: false
-    })
+    }, [
+        Autoplay({ 
+            delay: 4000, // 4 segundos entre cada slide
+            stopOnInteraction: false, // Continue passando mesmo após interação do usuário
+            stopOnMouseEnter: false, // Para quando o mouse estiver sobre o carousel
+            playOnInit: true // Inicia automaticamente
+        })
+    ])
 
     return (
             <div className=" lg:flex hidden embla" ref={emblaRef} >
@@ -26,19 +35,32 @@ const HeroLg = () => {
                             <HeroText />
                         </div>
                     </div>
-                    <div
-                        className="lg:flex embla__slide hidden items-center justify-end w-full
-             h-screen bg-[url('/tierWorkshopHero.svg')] bg-no-repeat bg-cover bg-center relative bg-size-[110%] "
-                        style={{
-                            height: 'calc(100svh - 88px)',
-                        }}
-                    >
-
-                    </div>
+                    <WorkshopSlide />
                 </div>
 
             </div>
 
+    );
+};
+
+const WorkshopSlide = () => {
+    const navigate = useNavigate();
+    
+    const goToWorkshop = () => {
+       
+        navigate('/workshop');
+    };
+
+    return (
+        <div
+            className="lg:flex embla__slide hidden items-center justify-center w-full
+            h-screen bg-[url('/workshopbg1.png')] bg-no-repeat bg-cover bg-center relative cursor-pointer hover:opacity-90 transition-opacity"
+            style={{
+                height: 'calc(100svh - 88px)',
+            }}
+            onClick={goToWorkshop}
+        >
+        </div>
     );
 };
 

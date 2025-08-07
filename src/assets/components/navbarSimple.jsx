@@ -2,8 +2,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Workshop', href: '#', current: true },
-    { name: 'Explorer', href: '#', current: false },
+    { name: 'Workshop', href: '/workshop', current: true },
+    { name: 'Explorer', href: '/explorer', current: false },
     { name: 'Competition', href: '#', current: false },
     { name: 'Produtos', href: '#', current: false },
     { name: 'Sobre nós', href: '#', current: false },
@@ -13,8 +13,8 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const selected = classNames( 'text-tier-orange font-bold hover:bg-tier-blue hover:text-white')
-const unselected = classNames('text-black hover:bg-tier-blue hover:text-white')
+const selected = classNames( 'text-tier-orange font-bold hover:bg-tier-blue transition-all hover:text-white')
+const unselected = classNames('text-black hover:bg-tier-blue hover:text-white transition-all')
 
 
 export default function Navbar() {
@@ -44,13 +44,15 @@ export default function Navbar() {
                                 src="/logo.svg"
                                 alt="Logo Mobile"
                                 className="block md:hidden h-12 w-auto"
+                                onClick={() => window.location.href = '/'}
                             />
 
                             {/* Logomarca para desktop */}
                             <img
                                 src="/logomarca.svg"
                                 alt="Logo Desktop"
-                                className="hidden md:block h-18 w-auto"
+                                className="hidden md:block h-18 w-auto cursor-pointer transition-opacity hover:opacity-80"
+                                onClick={() => window.location.href = '/'} 
                             />
                         </div>
 
