@@ -2,6 +2,24 @@
 
 @tailwind utilities;
 
+
+/* Montserrat Font Faces */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../public/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('../public/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
@@ -255,6 +273,7 @@
     --breakpoint-xs: 480px;
     --font-sans: InterVariable, sans-serif;
     --font-roboto: 'Roboto', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
     --font-laqonic: 'Laqonic 4F Unicase', sans-serif;
     --font-glacial: 'Glacial Indifference', sans-serif;
     --font-agrandir: 'Agrandir', sans-serif;

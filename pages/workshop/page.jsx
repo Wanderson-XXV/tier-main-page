@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from "../../src/assets/components/navbarSimple.jsx";
 import { HeroWorkshop } from '../../src/assets/components/hero/HeroWorkshop.jsx';
+import Footer from '../../src/assets/components/footer.jsx';
+import { Button } from '@headlessui/react';
 const Workshop = () => {
     return (
         <div>
@@ -8,6 +10,7 @@ const Workshop = () => {
            <HeroWorkshop />
            <Section2 />
            <Section3 />  
+           <Footer />
         </div>
     );
 };
@@ -28,10 +31,31 @@ const Section2 = () => {
 
 const Section3 = () => {
     return (
-        <div className='flex flex-col p-6  '>
-            <h1 className='text-tier-yellow text-center uppercase font-agrandir text-2xl md:text-4xl'>
+        <div className='flex flex-col p-6 lg:px-36 font-montserrat '>
+            <h1 className='text-tier-yellow text-center font-bold uppercase text-xl mb-12 md:text-2xl'>
                 Como Funciona o Workshop
             </h1>
+            <p className='text-lg'>
+                Durante o workshop, os alunos exploram três universos diferentes: aprendem a programar em <span className="font-bold">Python</span>,
+                desenvolvem projetos criativos com <span className="font-bold"> Scratch </span>
+                e mergulham no fascinante mundo da <span className="font-bold">Modelagem</span> e <span className="font-bold">Impressão</span> 3D.
+                < br></br>< br></br>
+                O Workshop é realizado presencialmente, em parceria com escolas que desejam levar a experiência até sua unidade. 
+                As atividades acontecem dentro da própria escola, com acompanhamento de professores especializados.
+                 Para garantir o melhor aproveitamento das aulas práticas, cada aluno (ou a própria instituição de ensino) deve 
+                 disponibilizar um computador para uso durante as atividades, permitindo que todos pratiquem e desenvolvam suas habilidades em tempo real,
+                 junto ao professor.
+                
+            </p>
+            <h1 className='text-tier-yellow text-center font-bold uppercase text-xl md:text-2xl my-12'>
+                Quer Levar Essa Experiência Inovadora Para a sua escola de forma TOTALMENTE gratuita?
+            </h1>
+            
+            <div className="flex items-center justify-center">
+                <Button className={"px-12 py-5 text-white font-glacial font-bold text-2xl bg-tier-orange rounded-4xl w-fit  cursor-pointer transition-opacity hover:opacity-90"}>
+                    SAIBA MAIS
+                </Button>       
+            </div>
         </div>
     );
 };

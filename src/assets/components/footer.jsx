@@ -14,7 +14,7 @@ function Footer() {
 const FooterLg = () => {
     return (
         
-            <div className="font-agrandir flex justify-between w-full h-full pb-2">
+            <div className="font-montserrat flex justify-between w-full h-full pb-2">
                 {/* Coluna 1 */}
                 <div className="pl-4 flex-1 pt-12 flex flex-col justify-between text-white h-full">
                     <h3 className='text-sm md:text-xl'>Entre em contato conosco:</h3>
@@ -25,12 +25,12 @@ const FooterLg = () => {
                         <a href="https://www.instagram.com/tier_education" target="_blank" rel="noopener noreferrer">
                             <img src="/instagram-icon.svg" alt="Instagram" className="w-5 h-5 md:w-8 md:h-8 mr-4" />
                         </a>
-                        <a href="https://www.instagram.com/tier_education" target="_blank" rel="noopener noreferrer">
+                        {/* <a href="https://www.instagram.com/tier_education" target="_blank" rel="noopener noreferrer">
                             <img src="/youtube-icon.svg" alt="Youtube" className="w-5 h-5 md:w-8 md:h-8 mr-4" />
-                        </a>
-                        <a href="https://www.instagram.com/tier_education" target="_blank" rel="noopener noreferrer">
+                        </a> */}
+                        {/* <a href="https://www.instagram.com/tier_education" target="_blank" rel="noopener noreferrer">
                             <img src="/linkedin-icon.svg" alt="Linkedin" className="w-5 h-5 md:w-8 md:h-8 mr-4" />
-                        </a>
+                        </a> */}
                         <a href="https://wa.me/5521991716690" target="_blank" rel="noopener noreferrer">
                             <img src="/whatsapp-icon.svg" alt="whatsapp" className="w-5 h-5 md:w-8 md:h-8 mr-4" />
                         </a>                                                

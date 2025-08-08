@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide = "slide", img, color}) => {
     const getColorClassName = (color) => {
@@ -74,10 +75,13 @@ const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide
 
 
     const textStyles = getTextContainerStyles();
+    const navigate = useNavigate();
     // const screenType = getScreenType();
     return (
          
-        <div className={`relative h-[60vh] md:h-[95vh] px-2 flex-1 flex flex-col items-center justify-center ${slide}`}>
+        <div className={`relative h-[60vh] cursor-pointer md:h-[95vh] px-2 flex-1 flex flex-col items-center justify-center ${slide}`}
+            onClick={() => navigate('/explorer')}
+        >
                 {/* <h1>{screenType}</h1> */}
             <div
                 style={{
@@ -104,14 +108,14 @@ const ProdutosCurricularesCard = ({title, description, linkText, linkHref, slide
                                 )}
                                 {linkText && linkHref && (
                                     <span className="block mt-2">
-                                        <a
-                                            href={linkHref}
+                                        <p
+                                            onClick={() => navigate(linkHref)}
                                             className="font-bold underline hover:text-blue-300 transition-colors text-sm md:text-base"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
                                             {linkText}
-                                        </a>
+                                        </p>
                                     </span>
                                 )}
                             </p>
