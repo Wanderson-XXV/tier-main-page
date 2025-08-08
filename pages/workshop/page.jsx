@@ -7,6 +7,7 @@ const Workshop = () => {
            <Navbar />
            <HeroWorkshop />
            <Section2 />
+           <Section3 />  
         </div>
     );
 };
@@ -23,6 +24,18 @@ const Section2 = () => {
         </div>
     );
 };
+
+
+const Section3 = () => {
+    return (
+        <div className='flex flex-col p-6  '>
+            <h1 className='text-tier-yellow text-center uppercase font-agrandir text-2xl md:text-4xl'>
+                Como Funciona o Workshop
+            </h1>
+        </div>
+    );
+};
+
 
 
 
