@@ -278,6 +278,26 @@
     --font-glacial: 'Glacial Indifference', sans-serif;
     --font-agrandir: 'Agrandir', sans-serif;
 }
+@layer utilities {
+  .text-stroke-2 {
+    -webkit-text-stroke: 2px var(--color-tier-orange);
+  }
+  .text-stroke-3 {
+    -webkit-text-stroke: 4px var(--color-tier-orange);
+  }
+
+  .text-stroke-4 {
+    -webkit-text-stroke: 4px var(--color-tier-orange);
+  }
+  .text-outline-orange {
+    -webkit-text-stroke: 4px var(--color-tier-orange);
+    color: white; /* preenchimento */
+  }
+  .text-outline-orange-hollow {
+    -webkit-text-stroke: 4px var(--color-tier-orange);
+    color: transparent;
+  }
+}
 
   .group:hover .tier-blue-bg-hover {
     background-color: rgba(70, 41, 132, 0.92); /* Cor com opacidade */
