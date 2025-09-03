@@ -1,20 +1,49 @@
+import ComoFunfaPratica from "./ComoFunfaPratica";
 import OqueEstart from "./OqueEstart";
 export const Start = () => {
   return (
     <>
     <StartTierHero />
     <StartTierSec2 />
+    <StartTierSec3 />
+    <StartTierSec4 />
     </>
   )
 }
 
+const StartTierSec4 = () => {
+        return (
+        <section className="h-[80vh] bg-off-white font-glacial text-3xl flex flex-col items-center relative px-4 pt-12">
+            <ComoFunfaPratica />
+        </section>
+    );
+
+}
+
+const StartTierSec3 = () => {
+    return (
+        <section className="h-[105vh] bg-tier-orange text-off-white font-glacial text-3xl flex flex-col items-center relative px-4 pt-12">
+            <h1 className="text-of">PORQUE ESCOLHER O <span className="font-bold">START TIER</span> PRA SUA ESCOLA?</h1>
+        </section>
+    );
+}
+
 const StartTierSec2 = () => {
     return (
-        <section className="h-[90vh] flex relative px-4 pt-12">
+        <section className="h-[90vh] flex flex-col relative px-4 pt-12">
              <img src="/quadriculado.svg" alt="Start Logo" className="absolute top-0 left-0 h-16"/>
-            <div className="content mt-3">
+            <div className="content w-full flex text-center justify-center mt-3">
                 <OqueEstart />
             </div>
+            <text className=" text-2xl font-montserrat md:p-12 text-justify">
+                O Start Tier é o programa da TIER Education criado
+                especialmente para alunos do Ensino Fundamental I. Ele 
+                desperta a curiosidade, o raciocínio lógico e o gosto por 
+                aprender, conectando as crianças ao universo da tecnologia,
+                robótica e cultura maker de forma divertida, prática e
+                significativa.
+            </text>
+            
         </section>
     );
 }

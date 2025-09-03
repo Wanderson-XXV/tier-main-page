@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-const OqueEstart = () => {
+const ComoFunfaPratica = () => {
   const textRef = useRef(null)
   const groupRef = useRef(null)
   const [box, setBox] = useState(null)
@@ -18,7 +18,7 @@ const OqueEstart = () => {
     const tb = textRef.current.getBBox() // mede em unidades do SVG (sem stroke)
 
     // Queremos que o ícone tenha a MESMA altura visível do texto (incluindo stroke)
-    const iconSize = Math.ceil(tb.height + STROKE_WIDTH) *0.9
+    const iconSize = Math.ceil(tb.height + STROKE_WIDTH) * 0.9
     // Alinhar topo do ícone ao topo visível do texto = (ajustando metade do stroke)
     const iconY = Math.floor(tb.y - STROKE_WIDTH / 2) + 5
     // Posicionar ícone à direita do texto com um pequeno GAP
@@ -88,7 +88,7 @@ const OqueEstart = () => {
           strokeWidth={STROKE_WIDTH}
           paintOrder="stroke"
         >
-          O QUE É O START TIER EXPLORER
+          COMO FUNCIONA NA PRÁTICA
         </text>
 
         {layout && (
@@ -108,4 +108,4 @@ const OqueEstart = () => {
   )
 }
 
-export default OqueEstart
+export default ComoFunfaPratica
