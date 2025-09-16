@@ -34,7 +34,7 @@
     src: local('Laqonic 4F Unicase Bold Italic'), local('Laqonic4FUnicase-BoldItalic'),
     url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.eot?#iefix') format('embedded-opentype'),
     url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.woff2') format('woff2'),
-    url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.woff') format('woff'),
+    url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.woff') format('woff'), 
     url('../public/fonts/Laqonic/Laqonic4FUnicase-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
@@ -260,6 +260,15 @@
     font-style: normal;
 }
 
+/* Retropix */
+@font-face {
+    font-family: 'Retropix';
+    src: url('../public/fonts/retropix.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
     --color-off-white: #f8f8f8;
     --color-tier-orange: #ff4203;
@@ -277,6 +286,8 @@
     --font-laqonic: 'Laqonic 4F Unicase', sans-serif;
     --font-glacial: 'Glacial Indifference', sans-serif;
     --font-agrandir: 'Agrandir', sans-serif;
+    /* Nova fonte */
+    --font-retropix: 'Retropix', sans-serif;
 }
 @layer utilities {
   .text-stroke-2 {
@@ -296,6 +307,19 @@
   .text-outline-orange-hollow {
     -webkit-text-stroke: 4px var(--color-tier-orange);
     color: transparent;
+  }
+
+  .font-retropix {
+    font-family: var(--font-retropix);
+  }
+
+  /* Deixa a Retropix mais "nítida" (efeito varia por SO/navegador) */
+  .pixel-crisp {
+    font-family: var(--font-retropix);
+    font-synthesis: none;                /* evita negrito/itálico simulados */
+    text-rendering: optimizeSpeed;       /* prioriza contornos simples */
+    -webkit-font-smoothing: subpixel-antialiased; /* macOS (limitado) */
+    -moz-osx-font-smoothing: auto;       /* Firefox no macOS */
   }
 }
 
