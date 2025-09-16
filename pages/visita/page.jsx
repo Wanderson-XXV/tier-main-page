@@ -55,7 +55,6 @@ const Section3 = () => {
                 </Button>
             </div>
         </div>
-        </div>
     );
 };
 
