@@ -1,24 +1,53 @@
-# Tier Education - Site Institucional
+# TIER Nexo IA
 
-Bem-vindo ao repositório do site institucional da **Tier Education**!  
-Aqui a gente mistura tecnologia, criatividade e educação para transformar o ensino de robótica no Brasil.
+Plataforma demonstrativa de inteligência pedagógica para professores, coordenadores e gestores escolares. O produto organiza planejamento, banco de questões, avaliações, adaptações, acompanhamento de estudantes, reuniões, biblioteca e relatórios em um único ambiente navegável.
 
-## Sobre o Projeto
+## Executar localmente
 
-Este é o site oficial da Tier Education, uma empresa criada por apaixonados por robótica educacional. Nosso objetivo é oferecer cursos, consultorias e preparar alunos para competições como FTC, FLL e TBR, além de fomentar a cultura maker nas escolas.
+Requisitos: Node.js 22.13 ou superior.
 
-O site foi pensado para ser responsivo, visualmente marcante e fácil de navegar, refletindo a vibe inovadora da Tier.
+```bash
+npm install
+npm run dev
+```
 
-## Tecnologias Utilizadas
+Abra o endereço exibido no terminal. Para validar a versão de produção:
 
-- **React** + **TypeScript**: Estrutura moderna, tipagem forte e componentização de respeito.
-- **Tailwind CSS**: Estilização rápida, responsiva e sem dor de cabeça.
-- **Appwrite**: Backend as a Service para autenticação, banco de dados e storage (quando necessário).
-- **Streamlit**: Para prototipagem rápida de dashboards e ferramentas analíticas (em projetos paralelos).
-- **Expo Router**: Organização de rotas em projetos mobile/web (quando aplicável).
+```bash
+npm run build
+npm test
+```
 
-## Como Rodar o Projeto
+## Perfis de demonstração
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/tier-education-site.git
+- **Professor:** Mariana Costa — Matemática, turmas 5101, 6101 e 6201.
+- **Coordenador:** Rafael Almeida — Ensino Fundamental.
+- **Gestor:** Carla Menezes — Colégio Demonstração TIER.
+
+Não há autenticação real. A tela de entrada aceita qualquer e-mail válido e senha com quatro ou mais caracteres.
+
+## Arquitetura
+
+- `app/components`: aplicação e componentes reutilizáveis.
+- `app/data`: dados brasileiros fictícios centralizados.
+- `app/services`: repositório local e simulações assíncronas.
+- `app/types`: tipos de domínio.
+- `app/globals.css`, `app/product.css` e `app/modules.css`: sistema visual responsivo e impressão.
+
+As telas consomem a interface de repositório em `app/services/repository.ts`, e não os mocks diretamente para operações de escrita. Os dados alterados durante a demonstração são persistidos em `localStorage`.
+
+## Funcionalidades simuladas
+
+- Login, onboarding e troca de perfil com menus e painéis adaptados.
+- Copiloto com contexto selecionável, etapas de processamento e respostas estruturadas.
+- CRUD local de questões, geração de variações, importação assistida e análise de qualidade.
+- Wizard de avaliação em sete etapas, versões A–D, adaptações, prova, gabarito e resolução.
+- Passaporte de Aprendizagem, observações separadas por fato/interpretação/ação/resultado e planos de acompanhamento.
+- Planos de aula, atividades, reuniões, conselho de classe, mensagens em rascunho, biblioteca, relatórios e configurações.
+- Busca global, filtros combináveis, ordenação visual, paginação, modais, toasts, estados vazios, carregamento e impressão.
+
+## Próxima etapa
+
+Autenticação, autorização no servidor, banco relacional, arquivos, IA real, auditoria, criptografia, consentimentos, integrações escolares e exportações reais serão conectados sem reconstruir a interface. Veja [BACKEND_ROADMAP.md](./BACKEND_ROADMAP.md).
+
+Todos os nomes e registros são fictícios. Sugestões geradas sempre exigem revisão do profissional.

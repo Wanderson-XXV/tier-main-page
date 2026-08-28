@@ -1,8 +1,0 @@
-roboto: googlefonts
-Trocchi: googlefonts
-Arimo: googlefonts
-
-LAQONIC: FontHub
-Agrandir Narrow: befonts - befonts.com/agrandir-font-family.html
-Glacial Indifference: FontSquirrel - https://www.fontsquirrel.com/fonts/glacial-indifference
-Lato Heavy:
